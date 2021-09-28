@@ -1,8 +1,10 @@
-package ru.Palyanaff.SamsungAcademy;
+package ru.Palyanaff.SamsungAcademy6;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int a = 5;
+        int b = 6;
+        System.out.println(a + b);
     }
 }
