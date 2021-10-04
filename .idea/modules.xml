@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project_2/Project_2.iml" filepath="$PROJECT_DIR$/Project_2/Project_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Samsung-Academy.iml" filepath="$PROJECT_DIR$/.idea/Samsung-Academy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dz 1.5/dz 1.5.iml" filepath="$PROJECT_DIR$/dz 1.5/dz 1.5.iml" />
+    </modules>
+  </component>
+</project>
