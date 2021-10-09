@@ -8,6 +8,85 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
+        int n = in.nextInt();
+
+        int [] arr = new int[10001];
+
+        if (n > 0){
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = in.nextInt();
+            }
+
+            int right = 1, left = n - 1;
+            while (right != left)
+            {
+                for (int i = right; i < left; i++)
+                {
+                    if (arr[i - 1] == 0){
+                        arr[i - 1] = arr[i];
+                        arr[i] = 0;
+                    }
+                }
+
+
+                for (int i = left; i > right; i--)
+                {
+                    if (arr[i - 1] == 0){
+                        arr[i - 1] = arr[i];
+                        arr[i] = 0;
+
+                    }
+                }
+                left--;
+                right++;
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+
+        /*int n = in.nextInt();
+
+        int [] arr = new int[10001];
+
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = in.nextInt();
+        }
+
+        int right = 1, left = n - 1;
+        while (right != left)
+        {
+            for (int i = right; i < left; i++)
+            {
+                if (arr[i - 1] > arr[i]){
+                    int buff = arr[i];
+                    arr[i] = arr[i - 1];
+                    arr[i - 1] = buff;
+                }
+            }
+            left--;
+
+            for (int i = left; i > right; i--)
+            {
+                if (arr[i] < arr[i - 1]){
+                    int buff = arr[i];
+                    arr[i] = arr[i - 1];
+                    arr[i - 1] = buff;
+                }
+            }
+            right++;
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            System.out.print(arr[i] + " ");
+        }*/
+
         /*float a = in.nextFloat();
         float b = in.nextFloat();
 
@@ -104,6 +183,7 @@ public class Main {
         }*/
 
     }
+
 
 
 }
