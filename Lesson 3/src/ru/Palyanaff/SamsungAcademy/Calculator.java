@@ -1,7 +1,19 @@
 package ru.Palyanaff.SamsungAcademy;
 
 public class Calculator {
-    public void doSomething(){
-        System.out.println("Hello I'm sample");
+    private int current;
+
+    public Calculator(){
+    }
+    public Calculator(int StartValue){
+        current = StartValue;
+    }
+
+    public int doSomething(int arg){
+        current += arg;
+        return current;
+    }
+    public int getCurrent(){
+        return current;
     }
 }
