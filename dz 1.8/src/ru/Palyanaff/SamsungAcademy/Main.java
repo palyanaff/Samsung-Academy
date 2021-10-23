@@ -8,6 +8,23 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         int n = in.nextInt();
+        int k = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            int a = in.nextInt();
+            if (a != 0){
+                System.out.print(a + " ");
+                k++;
+            }
+        }
+
+        for (int i = k; i < n; i++)
+        {
+            System.out.print(0 + " ");
+        }
+
+        /*int n = in.nextInt();
         int arr[] = new int[n];
         int brr[] = new int[n];
         int k = 0;
@@ -42,7 +59,7 @@ public class Main {
             } else {
                 break;
             }
-        }
+        }*/
 
         /*int n = in.nextInt();
         int arr[] = new int[n];
